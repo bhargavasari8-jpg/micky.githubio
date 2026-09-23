@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>MICKY | Haute Couture Footwear Maison • Geneva</title>
+  <meta name="description" content="MICKY is the world's most exclusive luxury footwear maison. Handcrafted in Geneva and Florence for ultra-high-net-worth individuals. 24K gold leaf, meteorite dust, and titanium architecture.">
+  
+  <!-- Favicon Monogram -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23d4af37'>M</text></svg>">
+
+  <!-- Luxury Stylesheets -->
+  <link rel="stylesheet" href="css/luxury-tokens.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Film Grain Overlay for Editorial Haute Horlogerie Feel -->
+  <div class="film-grain" aria-hidden="true"></div>
+
+  <!-- VIP Gatekeeper Preloader -->
+  <div class="vip-gatekeeper" id="vipGatekeeper">
+    <div class="gatekeeper-monogram">MICKY</div>
+    <div class="gatekeeper-status-line" id="gatekeeperStatusText">AUTHENTICATING VIP ALLOCATION PROTOCOL</div>
+    <div class="gatekeeper-progress-track">
+      <div class="gatekeeper-progress-fill" id="gatekeeperProgressFill"></div>
+    </div>
+    <div style="font-size: 0.65rem; color: var(--platinum-dark); letter-spacing: 0.2em; text-transform: uppercase;">
+      GENÈVE • ZÜRICH • PARIS • MONACO
+    </div>
+  </div>
+
+  <!-- Maison Navigation Header -->
+  <header class="maison-header">
+    <a href="#" class="brand-mark text-gold-foil" style="text-decoration: none;">
+      MICKY
+      <span style="display: block; font-family: var(--font-sans-modern); font-size: 0.55rem; letter-spacing: 0.45em; color: var(--gold-champagne); margin-top: 4px;">MAISON DE LUXE</span>
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#vault" class="nav-link">The Vault</a></li>
+        <li><a href="#atelier" class="nav-link">3D Atelier</a></li>
+        <li><a href="#alchemy" class="nav-link">Craftsmanship</a></li>
+        <li><a href="#concierge" class="nav-link" onclick="window.cartManager.openConcierge()">Private Curator</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <!-- Live Currency Switcher -->
+      <div class="currency-select-wrap">
+        <select class="currency-select" id="currencySelector" aria-label="Select Currency">
+          <option value="USD">USD ($)</option>
+          <option value="EUR">EUR (€)</option>
+          <option value="GBP">GBP (£)</option>
+          <option value="AED">AED (د.إ)</option>
+          <option value="CHF">CHF (Fr)</option>
+          <option value="BTC">BTC (₿)</option>
+          <option value="ETH">ETH (Ξ)</option>
+        </select>
+        <span class="currency-select-arrow" aria-hidden="true"></span>
+      </div>
+
+      <!-- Procedural Luxury Audio Synthesizer Toggle -->
+      <button class="btn-audio-toggle" id="btnAudioToggle" title="Toggle Atmospheric Ambience & Tactile Sound" aria-label="Toggle Sound">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+        </svg>
+      </button>
+
+      <!-- Vault Allocation Bag Button -->
+      <button class="btn-bag-vault" id="btnOpenVaultBag">
+        <span>Vault Bag</span>
+        <span class="bag-count-badge" id="bagCountBadge">1</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Kinetic Showcase Stage -->
+  <main>
+    <section class="hero-section">
+      <div class="hero-ambient-orb orb-gold"></div>
+      <div class="hero-ambient-orb orb-dark"></div>
+
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-ticker">
+            <span class="ticker-pulse"></span>
+            <span>WORLDWIDE ALLOCATION: ONLY 12 SPECIMENS COMMISSIONED</span>
+          </div>
+
+          <h1 class="display-hero">
+            BEYOND WEALTH.<br>
+            <span class="text-gold-foil">STEP INTO SUPREMACY.</span>
+          </h1>
+
+          <p class="display-subhero">
+            Engineered exclusively for sovereign leaders, titans of industry, and haute couture collectors. Hand-lasted in Geneva and Florence with 24-karat gold leaf, Muonionalusta meteorite dust, and aerospace carbon titanium.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#vault" class="btn-micky-primary">
+              <span>Acquire Allocation</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#atelier" class="btn-micky-outline">
+              <span>3D Atelier Customizer</span>
+            </a>
+          </div>
+
+          <div class="hero-stats-bar">
+            <div class="stat-item">
+              <span class="stat-value" data-price-usd="14800">$14,800</span>
+              <span class="stat-label">Starting Allocation</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">420 HRS</span>
+              <span class="stat-label">Swiss Hand-Crafting</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">1-OF-12</span>
+              <span class="stat-label">Global Rarity Run</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D Kinetic Interactive Hero Stage with Mouse Tilt -->
+        <div class="kinetic-stage-wrap">
+          <div class="kinetic-stage" id="kineticHeroStage" title="Drag or move cursor to inspect in 3D perspective">
+            <div class="light-ray-sweep"></div>
+            
+            <div class="stage-badge-hotspot">
+              <span>SERIES 01 // 2026</span>
+              <span style="color: var(--gold-light); font-weight: 700;">AUREUM SOVEREIGN I</span>
+            </div>
+
+            <div class="pedestal-ring"></div>
+
+            <!-- Photorealistic High-Definition Interactive Vector Shoe Graphic -->
+            <svg id="heroShoeImg" viewBox="0 0 800 450" class="hero-shoe-canvas floating-shoe" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="heroGoldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#bf953f" />
+                  <stop offset="25%" stop-color="#fcf6ba" />
+                  <stop offset="50%" stop-color="#b38728" />
+                  <stop offset="75%" stop-color="#fbf5b7" />
+                  <stop offset="100%" stop-color="#aa771c" />
+                </linearGradient>
+                <linearGradient id="heroCarbonGradient" x1="0%" y1="0%" x2="100%" y2="20%">
+                  <stop offset="0%" stop-color="#07080b" />
+                  <stop offset="35%" stop-color="#1b1c24" />
+                  <stop offset="70%" stop-color="#0c0d12" />
+                  <stop offset="100%" stop-color="#020304" />
+                </linearGradient>
+                <linearGradient id="leatherUpperGrad" x1="0%" y1="30%" x2="100%" y2="80%">
+                  <stop offset="0%" stop-color="#181a24" />
+                  <stop offset="50%" stop-color="#242838" />
+                  <stop offset="100%" stop-color="#0e1017" />
+                </linearGradient>
+              </defs>
+
+              <!-- Shoe Shadow Base -->
+              <ellipse cx="400" cy="385" rx="310" ry="24" fill="#000000" opacity="0.8" filter="blur(8px)" />
+
+              <!-- Aerodynamic Carbon Fiber Outsole -->
+              <path d="M120 340 C190 345, 270 365, 420 365 C540 365, 660 350, 710 320 C690 310, 630 315, 450 315 C300 315, 170 305, 120 340 Z" 
+                    fill="url(#heroCarbonGradient)" stroke="url(#heroGoldGradient)" stroke-width="2.5" />
+
+              <!-- Titanium Midsole Struts -->
+              <path d="M140 315 C240 320, 420 325, 660 305 C620 280, 520 285, 430 288 C320 292, 190 285, 140 315 Z" 
+                    fill="#151720" stroke="rgba(212, 175, 55, 0.4)" stroke-width="1.2" />
+
+              <!-- Sculpted Upper Leather Body -->
+              <path d="M140 305 C160 250, 220 180, 310 145 C380 120, 480 160, 540 195 C600 230, 670 270, 690 300 C640 310, 400 308, 140 305 Z" 
+                    fill="url(#leatherUpperGrad)" stroke="url(#heroGoldGradient)" stroke-width="2" />
+
+              <!-- 24K Gold Leaf Veined Side Ribbon -->
+              <path d="M150 290 Q340 240, 520 260 Q620 270, 680 295 Q520 280, 320 275 Z" fill="url(#heroGoldGradient)" />
+
+              <!-- Florentine Heel Counter with Engraved Gold Plate -->
+              <path d="M140 305 C130 250, 150 190, 220 165 C200 240, 205 285, 230 310 Z" fill="#0d0e14" />
+              <g transform="translate(165, 225) rotate(-16)">
+                <rect x="0" y="0" width="50" height="24" rx="4" fill="url(#heroGoldGradient)" stroke="#805b18" stroke-width="1" />
+                <text x="25" y="16" font-family="'Cinzel Decorative', serif" font-weight="900" font-size="11" fill="#08090d" text-anchor="middle" letter-spacing="1.5">
+                  MICKY
+                </text>
+              </g>
+
+              <!-- Solid 18K Gold Eyelets and Braided Metallic Laces -->
+              <circle cx="340" cy="165" r="7.5" fill="url(#heroGoldGradient)" stroke="#fcf6ba" stroke-width="1.5" />
+              <circle cx="380" cy="180" r="7.5" fill="url(#heroGoldGradient)" stroke="#fcf6ba" stroke-width="1.5" />
+              <circle cx="420" cy="200" r="7.5" fill="url(#heroGoldGradient)" stroke="#fcf6ba" stroke-width="1.5" />
+              <circle cx="465" cy="225" r="7.5" fill="url(#heroGoldGradient)" stroke="#fcf6ba" stroke-width="1.5" />
+              <path d="M340 165 Q390 195, 380 180 T420 200 T465 225" fill="none" stroke="url(#heroGoldGradient)" stroke-width="3.5" stroke-linecap="round" />
+            </svg>
+
+            <div class="stage-controls-hint">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+              </svg>
+              <span>Dynamic 3D Perspective Enabled</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Bespoke 3D Customizer Studio -->
+    <section class="customizer-section" id="atelier">
+      <div class="customizer-container">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+          <span class="section-eyebrow">Atelier Privé Genève</span>
+          <h2 class="section-title" style="margin-top: 14px;">THE BESPOKE 3D CONFIGURATOR</h2>
+          <p class="display-subhero" style="margin-top: 12px;">
+            Craft your singular 1-of-1 silhouette. Select certified rare exotic skins, cryogenic titanium architectures, and have your family crest or personal monogram debossed in solid 24K gold.
+          </p>
+        </div>
+
+        <div class="customizer-studio-grid">
+          <!-- Viewport Box -->
+          <div class="customizer-viewport-box">
+            <div class="monogram-badge-overlay">
+              <span style="font-size: 0.65rem; color: var(--platinum-dark);">HEEL MONOGRAM:</span>
+              <span id="monogramOverlayBadge">M.R.</span>
+            </div>
+
+            <!-- Dynamic SVG Container rendered by shoe-customizer.js -->
+            <div id="customizerSvgViewport" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"></div>
+
+            <!-- Perspective Angle Controls -->
+            <div class="customizer-angle-pills">
+              <button class="btn-angle-pill active" data-angle="side">Profile View</button>
+              <button class="btn-angle-pill" data-angle="top">Aerial Insole</button>
+              <button class="btn-angle-pill" data-angle="heel">Gold Ingot Heel</button>
+              <button class="btn-angle-pill" data-angle="sole">Carbon Chassis</button>
+            </div>
+          </div>
+
+          <!-- Customizer Controls -->
+          <div class="customizer-controls-panel">
+            <!-- 1. Body Material -->
+            <div class="control-group">
+              <div class="control-label-row">
+                <span class="control-title">01. Primary Upper Material</span>
+                <span class="control-selected-text" id="selectedMaterialLabel">24K Gold Leaf Veined Calfskin</span>
+              </div>
+              <div class="material-swatches-grid">
+                <div class="swatch-card active" data-material="gold-leaf">
+                  <div class="swatch-circle" style="background: linear-gradient(135deg, #d4af37, #f6e6b8);"></div>
+                  <span class="swatch-name">24K Gold Veined</span>
+                </div>
+                <div class="swatch-card" data-material="alligator">
+                  <div class="swatch-circle" style="background: #141720;"></div>
+                  <span class="swatch-name">Matte Alligator</span>
+                </div>
+                <div class="swatch-card" data-material="titanium">
+                  <div class="swatch-circle" style="background: linear-gradient(135deg, #495057, #ced4da);"></div>
+                  <span class="swatch-name">Damascus Mesh</span>
+                </div>
+                <div class="swatch-card" data-material="suede">
+                  <div class="swatch-circle" style="background: #2a1f36;"></div>
+                  <span class="swatch-name">Midnight Velvet</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Hardware & Eyelets -->
+            <div class="control-group">
+              <div class="control-label-row">
+                <span class="control-title">02. Chassis & Eyelet Hardware</span>
+                <span class="control-selected-text" id="selectedHardwareLabel">18K Solid Yellow Gold</span>
+              </div>
+              <div class="material-swatches-grid">
+                <div class="swatch-card active" data-hardware="solid-gold">
+                  <div class="swatch-circle" style="background: #e6b800; border: 1.5px solid #fff;"></div>
+                  <span class="swatch-name">18K Solid Gold</span>
+                </div>
+                <div class="swatch-card" data-hardware="platinum">
+                  <div class="swatch-circle" style="background: #f8f9fa; border: 1.5px solid #adb5bd;"></div>
+                  <span class="swatch-name">Pure Platinum</span>
+                </div>
+                <div class="swatch-card" data-hardware="black-diamond">
+                  <div class="swatch-circle" style="background: #12131a; border: 1.5px solid #3d4252;"></div>
+                  <span class="swatch-name">Black Diamonds</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Monogram Gold Debossing -->
+            <div class="control-group">
+              <div class="control-label-row">
+                <span class="control-title">03. Bespoke Initials Debossing</span>
+                <span class="meta-serial">SOLID GOLD INGOT</span>
+              </div>
+              <div class="monogram-input-wrap">
+                <input type="text" class="monogram-input" id="customizerMonogramInput" value="M.R." maxlength="4" placeholder="INITIALS" aria-label="Enter Bespoke Initials">
+              </div>
+              <span style="font-size: 0.68rem; color: var(--platinum-dark);">Engraved onto the rear titanium heel chassis with Swiss micro-laser certification.</span>
+            </div>
+
+            <!-- Price & Allocation CTA -->
+            <div class="customizer-summary-footer">
+              <div class="custom-price-readout">
+                <span style="font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--platinum-dark);">Commission Valuation</span>
+                <span class="price-tag" id="customizerPriceReadout" style="font-size: 1.8rem;">$29,000</span>
+              </div>
+              <button class="btn-micky-primary" id="btnReserveCustomBespoke">
+                <span>Reserve Commission</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Footwear Vault (Flagship Global Collection) -->
+    <section class="vault-section" id="vault">
+      <div class="vault-header">
+        <span class="section-eyebrow">The Curated Archives</span>
+        <h2 class="section-title">THE FLAGSHIP SPECIMEN VAULT</h2>
+        <p class="display-subhero" style="max-width: 720px;">
+          Strictly capped allocations. Each pair includes an encrypted physical NFC micro-anchor, private diplomatic courier dispatch, and lifetime Geneva refurbishment privileges.
+        </p>
+
+        <!-- Category Filters -->
+        <div class="vault-filter-tabs">
+          <button class="vault-tab-btn active" data-category="all">All Rare Allocations</button>
+          <button class="vault-tab-btn" data-category="sneakers">Hyper-Sneakers</button>
+          <button class="vault-tab-btn" data-category="loafers">Bespoke Dress Loafers</button>
+          <button class="vault-tab-btn" data-category="celestial">1-of-1 Celestial Editions</button>
+        </div>
+      </div>
+
+      <div class="vault-grid">
+        <!-- Specimen 01 -->
+        <article class="vault-card" data-category="sneakers" data-id="specimen-01">
+          <div class="vault-card-media">
+            <div class="vault-card-badges">
+              <span class="badge-rarity rarity-live">ALLOCATION: 08/12</span>
+              <span class="meta-serial">MK-AUR-01</span>
+            </div>
+            <!-- High detail SVG shoe card -->
+            <svg viewBox="0 0 400 240" class="vault-card-img" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="200" cy="210" rx="160" ry="14" fill="#000" opacity="0.6" filter="blur(4px)" />
+              <path d="M50 180 C80 182, 130 195, 210 195 C270 195, 330 185, 360 170 C350 165, 320 167, 230 167 C150 167, 80 162, 50 180 Z" fill="#08090c" stroke="#d4af37" stroke-width="1.5" />
+              <path d="M60 167 C70 135, 110 95, 160 80 C200 68, 250 88, 280 110 C310 130, 345 150, 355 165 C330 170, 200 170, 60 167 Z" fill="#181a24" stroke="#d4af37" stroke-width="1.5" />
+              <path d="M70 160 Q170 130, 260 145 Q310 150, 340 163 Q260 155, 160 152 Z" fill="url(#heroGoldGradient)" />
+            </svg>
+          </div>
+
+          <div class="vault-card-body">
+            <div class="vault-card-header">
+              <h3 class="vault-card-title">MICKY Aureum Sovereign I</h3>
+              <span class="price-tag" data-price-usd="14800">$14,800</span>
+            </div>
+            <p class="vault-card-desc">
+              Layered 24K gold foil thread, aerospace carbon sole chassis, and hand-sewn Parisian box calfskin.
+            </p>
+
+            <div class="vault-specs-table">
+              <div class="vault-spec-row">
+                <span class="vault-spec-label">Leather Grade</span>
+                <span class="vault-spec-val">Tuscan 0.01% Reserve</span>
+              </div>
+              <div class="vault-spec-row">
+                <span class="vault-spec-label">Chassis</span>
+                <span class="vault-spec-val">Formula Carbon Core</span>
+              </div>
+              <div class="vault-spec-row">
+                <span class="vault-spec-label">Hardware</span>
+                <span class="vault-spec-val">18K Solid Gold</span>
+              </div>
+              <div class="vault-spec-row">
+                <span class="vault-spec-label">Provenance</span>
+                <span class="vault-spec-val">Swiss Vault Ledger</span>
+              </div>
+            </div>
+
+            <div class="vault-card-actions">
+              <button class="btn-card-acquire">Acquire Allocation</button>
+              <button class="btn-card-view">Inspect</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Specimen 02 -->
+        <article class="vault-card" data-category="sneakers" data-id="specimen-02">
+          <div class="vault-card-media">
+            <div class="vault-card-badges">
+              <span class="badge-rarity rarity-live">ALLOCATION: 03/07</span>
+              <span class="meta-serial">MK-NOC-02</span>
+            </div>
+            <svg viewBox="0 0 400 240" class="vault-card-img" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="200" cy="210" rx="160" ry="14" fill="#000" opacity="0.6" filter="blur(4px)" />
+              <path d="M50 180 C80 182, 130 195, 210 195 C270 195, 330 185, 360 170 C350 165, 320 167, 230 167 C150 167, 80 162, 50 180 Z" fill="#030406" stroke="#4a4f5c" stroke-width="1.5" />
+              <path d="M60 167 C70 135, 110 95, 160 80 C200 68, 250 88, 280 110 C310 130, 345 150, 355 165 C330 170, 200 170, 60 167 Z" fill="#0f1118" stroke="#333845" stroke-width="1.5" />
+              <!-- Black Diamond Studs -->
+              <circle cx="170" cy="90" r="4" fill="#020204" stroke="#d4af37" stroke-width="1" />
+              <circle cx="190" cy="100" r="4" fill="#020204" stroke="#d4af37" stroke-width="1" />
+              <circle cx="210" cy="110" r="4" fill="#020204" stroke="#d4af37" stroke-width="1" />
+            </svg>
+          </div>
+
+          <div class="vault-card-body">
+            <div class="vault-card-header">
+              <h3 class="vault-card-title">MICKY Nocturne Imperator</h3>
+              <span class="price-tag" data-price-usd="28500">$28,500</span>
+            </div>
+            <p class="vault-card-desc">
+              Matte midnight Mississippi alligator, 1.2ct flawless black diamond eyelets, and titanium suspension arch.
+            </p>
+
+            <div class="vault-specs-table">
+              <div class="vault-spec-row">
+                <span class="vault-spec-label">Leather Grade</span>
+                <span class="vault-spec-val">Wild Porosus Alligator</span>
+              </div>
+              <div class="vault-spec-row">
+                <span class="vault-spec-label">Chassis</span>
+                <span class="vault-spec-val">Cryo-Forged Titanium</span>
+              </div>
+              <div class="vault-spec-row">
+                <span class="vault-spec-label">Gems</span>
+                <span class="vault-spec-val">1.2ct Black Diamonds</span>
+              </div>
+              <div class="vault-spec-row">
+                <span class="vault-spec-label">Global Run</span>
+                <span class="vault-spec-val">7 Hand-Numbered</span>
+              </div>
+            </div>
+
+            <div class="vault-card-actions">
+              <button class="btn-card-acquire">Acquire Allocation</button>
+              <button class="btn-card-view">Inspect</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Specimen 03 -->
+        <article class="vault-card" data-category="celestial" data-id="specimen-03">
+          <div class="vault-card-media">
+            <div class="vault-card-badges">
+              <span class="badge-rarity" style="border-color: #8ce6ff; color: #b4f1ff;">1-OF-3 CELESTIAL</span>
+              <span class="meta-serial">MK-MET-00</span>
+            </div>
+            <svg viewBox="0 0 400 240" class="vault-card-img" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="200" cy="210" rx="160" ry="14" fill="#000" opacity="0.6" filter="blur(4px)" />
+              <path d="M50 180 C80 182, 130 195, 210 195 C270 195, 330 185, 360 170 C350 165, 320 167, 230 167 C150 167, 80 162, 50 180 Z" fill="#141924" stroke="#a2c4e2" stroke-width="1.5" />
+              <path d="M60 167 C70 135, 110 95, 160 80 C200 68, 250 88, 280 110 C310 130, 345 150, 355 165 C330 170, 200 170, 60 167 Z" fill="#20283a" stroke="#8cb8dd" stroke-width="2" />
+              <!-- Meteorite Inlay Pattern -->
+              <line x1="120" y1="130" x2="220" y2="100" stroke="#f0f7fc" stroke-width="1.5" opacity="0.7" />
+              <line x1="180" y1="150" x2="260" y2="120" stroke="#f0f7fc" stroke-width="1.5" opacity="0.7" />
+            </svg>
+          </div>
+
+          <div class="vault-card-body">
+            <div class="vault-card-header">
+              <h3 class="vault-card-title">MICKY Meteorite Zero</h3>
+              <span class="price-tag" data-price-usd="52000">$52,000</span>
+            </div>
+            <p class="vault-card-desc">
+              Infused with genuine Muonionalusta meteorite dust, pure 950 platinum alloy heel-lock, and galactic heritage certificate.
+            </p>
+
+            <div class="vault-specs-table">
+              <div class="vault-spec-row">
+                <span class="vault-spec-label">Rare Element</span>
+                <span class="vault-spec-val">Muonionalusta Meteorite</span>
+              </div>
+              <div class="vault-spec-row">
+                <span class="vault-spec-label">Metal</span>
+                <span class="vault-spec-val">Solid Platinum 950</span>
+              </div>
+              <div class="vault-spec-row">
+                <span class="vault-spec-label">Assembly</span>
+                <span class="vault-spec-val">Geneva High Watchmaker</span>
+              </div>
+              <div class="vault-spec-row">
+                <span class="vault-spec-label">Security</span>
+                <span class="vault-spec-val">Biometric Swiss Safe</span>
+              </div>
+            </div>
+
+            <div class="vault-card-actions">
+              <button class="btn-card-acquire">Acquire Allocation</button>
+              <button class="btn-card-view">Inspect</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Specimen 04 -->
+        <article class="vault-card" data-category="loafers" data-id="specimen-04">
+          <div class="vault-card-media">
+            <div class="vault-card-badges">
+              <span class="badge-rarity">ALLOCATION: 05/20</span>
+              <span class="meta-serial">MK-MNC-04</span>
+            </div>
+            <svg viewBox="0 0 400 240" class="vault-card-img" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="200" cy="210" rx="160" ry="14" fill="#000" opacity="0.6" filter="blur(4px)" />
+              <path d="M50 185 C90 187, 140 198, 220 198 C280 198, 340 188, 365 178 C355 172, 320 174, 230 174 C150 174, 80 172, 50 185 Z" fill="#fdfbf7" stroke="#d4af37" stroke-width="1.5" />
+              <path d="M60 174 C75 150, 120 120, 180 115 C230 110, 270 125, 310 145 C335 158, 355 170, 360 176 C330 180, 200 180, 60 174 Z" fill="#1c1626" stroke="#d4af37" stroke-width="1.5" />
+              <!-- 18k Gold Yacht Buckle Bit -->
+              <rect x="200" y="125" width="40" height="12" rx="3" fill="url(#heroGoldGradient)" stroke="#805b18" stroke-width="1" />
+            </svg>
+          </div>
+
+          <div class="vault-card-body">
+            <div class="vault-card-header">
+              <h3 class="vault-card-title">MICKY Monaco Superyacht Loafer</h3>
+              <span class="price-tag" data-price-usd="9400">$9,400</span>
+            </div>
+            <p class="vault-card-desc">
+              Salt-resistant white butter calfskin, 18K solid gold horsebit emblem, and non-scuff teak oyster deck sole.
+            </p>
+
+            <div class="vault-specs-table">
+              <div class="vault-spec-row">
+                <span class="vault-spec-label">Application</span>
+                <span class="vault-spec-val">Superyacht Teak Deck</span>
+              </div>
+              <div class="vault-spec-row">
+                <span class="vault-spec-label">Buckle</span>
+                <span class="vault-spec-val">18K Solid Cast Gold</span>
+              </div>
+              <div class="vault-spec-row">
+                <span class="vault-spec-label">Lining</span>
+                <span class="vault-spec-val">Cashmere-Silk Blend</span>
+              </div>
+              <div class="vault-spec-row">
+                <span class="vault-spec-label">Weight</span>
+                <span class="vault-spec-val">Featherlight 210g</span>
+              </div>
+            </div>
+
+            <div class="vault-card-actions">
+              <button class="btn-card-acquire">Acquire Allocation</button>
+              <button class="btn-card-view">Inspect</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- The 420-Hour Alchemy (Craftsmanship) -->
+    <section class="alchemy-section" id="alchemy">
+      <div style="text-align: center; max-width: 840px; margin: 0 auto;">
+        <span class="section-eyebrow">Haute Manufactory</span>
+        <h2 class="section-title" style="margin-top: 14px;">THE 420-HOUR ALCHEMY</h2>
+        <p class="display-subhero" style="margin-top: 12px;">
+          Footwear elevated to high horology. How master artisans in Geneva and Florence transform raw celestial elements and sovereign leathers into walking works of art.
+        </p>
+      </div>
+
+      <div class="alchemy-steps-grid">
+        <div class="alchemy-step-card">
+          <span class="step-num">01</span>
+          <h4 class="step-title">The 0.01% Selection</h4>
+          <p class="step-desc">
+            We inspect over 10,000 skins to select the single hide with immaculate grain integrity, untainted by weather, aged in natural alpine spring water.
+          </p>
+        </div>
+
+        <div class="alchemy-step-card">
+          <span class="step-num">02</span>
+          <h4 class="step-title">Cryogenic Titanium Forging</h4>
+          <p class="step-desc">
+            The arch support shank is laser-milled from Grade-5 aerospace titanium, frozen to -196°C to eliminate micro-vibrations and guarantee eternal longevity.
+          </p>
+        </div>
+
+        <div class="alchemy-step-card">
+          <span class="step-num">03</span>
+          <h4 class="step-title">Florentine Hand-Lasting</h4>
+          <p class="step-desc">
+            Over three weeks, leather is stretched and molded by master shoemakers who have passed down secret tension techniques across five generations.
+          </p>
+        </div>
+
+        <div class="alchemy-step-card">
+          <span class="step-num">04</span>
+          <h4 class="step-title">24K Gold Leaf Gilding</h4>
+          <p class="step-desc">
+            Delicate 24-karat gold leaf is hand-gilded and bonded into the leather crevices with natural acacia gum, buffed to an incandescent mirror luster.
+          </p>
+        </div>
+
+        <div class="alchemy-step-card">
+          <span class="step-num">05</span>
+          <h4 class="step-title">Geneva Vault Inscription</h4>
+          <p class="step-desc">
+            Each pair is sealed with a microscopic cryptographic hardware ledger and enrolled into the Swiss Private Vault database under the buyer's sovereign seal.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- The Vault Cart Slide-Over Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay" aria-modal="true" role="dialog">
+    <div class="cart-drawer">
+      <div class="cart-drawer-header">
+        <div>
+          <span class="meta-serial">CONFIDENTIAL ALLOCATION</span>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: 1.25rem; color: var(--gold-champagne);">THE PRIVATE VAULT</h3>
+        </div>
+        <button class="btn-close-drawer" id="btnCloseVaultBag" aria-label="Close Vault Cart">✕</button>
+      </div>
+
+      <div class="cart-items-list" id="cartItemsList">
+        <!-- Rendered dynamically by cart-concierge.js -->
+      </div>
+
+      <div class="cart-drawer-footer">
+        <!-- White-Glove Armored Delivery Method -->
+        <div class="delivery-tier-selector">
+          <label class="delivery-tier-label" for="deliveryTierSelect">Select White-Glove Dispatch Protocol</label>
+          <select class="delivery-select" id="deliveryTierSelect">
+            <option value="armored">Ferrari Armored Diplomatic Courier (Complimentary)</option>
+            <option value="heli">Helicopter Superyacht Drop Mediterranean / Caribbean (+$2,500)</option>
+            <option value="geneva">Geneva Free-Port Secure Vault Safe Deposit (Complimentary)</option>
+          </select>
+        </div>
+
+        <!-- Complimentary Inclusions -->
+        <div style="background: rgba(212, 175, 55, 0.05); border: 1px dashed var(--border-hairline); padding: 12px; border-radius: 4px; font-size: 0.7rem; color: var(--platinum-muted); line-height: 1.4;">
+          <span style="color: var(--gold-primary); font-weight: 700;">INCLUDED PRIVILEGES:</span><br>
+          • Handcrafted Cedar Shoe Tree with 24K Gold Plaque<br>
+          • Silk Velvet Dust Bags with Gold Thread Cord<br>
+          • Swiss Vault Physical Ledger & ERC-721 Cryptographic Token
+        </div>
+
+        <div class="cart-totals-summary">
+          <span style="font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--platinum-dark);">Total Investment</span>
+          <span class="price-tag" id="cartTotalDisplay" style="font-size: 1.6rem;">$14,800</span>
+        </div>
+
+        <button class="btn-micky-primary" id="btnVaultCheckout" style="width: 100%;">
+          <span>Execute Allocation Transfer</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Private Concierge Trigger -->
+  <div class="concierge-float-trigger" id="conciergeFloatTrigger" role="button" aria-label="Open Private Concierge">
+    <div class="concierge-avatar">AV</div>
+    <div>
+      <div class="concierge-trigger-text">Private Curator</div>
+      <div style="font-size: 0.62rem; color: #1fd68a; letter-spacing: 0.1em;">ONLINE IN GENEVA</div>
+    </div>
+  </div>
+
+  <!-- Private Concierge Chat Modal -->
+  <div class="concierge-chat-modal" id="conciergeChatModal" aria-modal="true" role="dialog">
+    <div class="concierge-chat-header">
+      <div>
+        <h4 style="font-family: 'Playfair Display', serif; font-size: 0.95rem; color: var(--gold-champagne);">Alexander Vance</h4>
+        <span style="font-size: 0.65rem; color: var(--platinum-dark); letter-spacing: 0.1em;">Senior Footwear Curator • MICKY Maison</span>
+      </div>
+      <button class="btn-close-drawer" id="btnCloseConcierge" style="font-size: 1rem;">✕</button>
+    </div>
+
+    <div class="concierge-chat-messages" id="conciergeChatMessages">
+      <div class="chat-bubble bubble-concierge">
+        Honored Guest. I am Alexander Vance. Whether you require private yacht fitting in Monaco, tailored solid gold eyelet engravings, or helicopter delivery to your estate, I remain at your service.
+      </div>
+    </div>
+
+    <div class="concierge-chat-input-row">
+      <input type="text" class="chat-input" id="conciergeChatInput" placeholder="Inquire about yacht fittings, materials, private wire..." aria-label="Type your inquiry to the curator">
+      <button class="btn-chat-send" id="btnSendConciergeChat">Send</button>
+    </div>
+  </div>
+
+  <!-- Maison Footer -->
+  <footer style="border-top: 1px solid var(--border-hairline); padding: 80px clamp(20px, 5vw, 80px) 40px; background: #030405; color: var(--platinum-dark);">
+    <div style="max-width: 1440px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 40px; margin-bottom: 60px;">
+      <div>
+        <span class="brand-mark text-gold-foil">MICKY</span>
+        <p style="font-size: 0.8rem; line-height: 1.6; margin-top: 14px; color: var(--platinum-muted);">
+          MICKY Maison de Luxe represents the pinnacle of sovereign footwear. Strictly reserved for those who command history.
+        </p>
+      </div>
+
+      <div>
+        <h5 style="font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-champagne); margin-bottom: 16px;">Private Salons</h5>
+        <p style="font-size: 0.78rem; line-height: 1.8;">
+          Rue du Rhône 42, 1204 Genève, Switzerland<br>
+          Place Vendôme 18, 75001 Paris, France<br>
+          Via Monte Napoleone 8, 20121 Milano, Italy<br>
+          Port Hercule, MC-98000 Monaco
+        </p>
+      </div>
+
+      <div>
+        <h5 style="font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-champagne); margin-bottom: 16px;">Private Banking & Dispatch</h5>
+        <p style="font-size: 0.78rem; line-height: 1.8;">
+          Swiss Francs (CHF) • US Dollars (USD)<br>
+          Bitcoin (BTC) • Ethereum (ETH) Vaults<br>
+          Direct Diplomatic Courier Clearance<br>
+          Full Discretion & Non-Disclosure Guarantee
+        </p>
+      </div>
+    </div>
+
+    <div style="border-top: 1px solid var(--border-subtle); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; font-size: 0.7rem;">
+      <span>© 2026 MICKY MAISON DE LUXE SA. ALL RIGHTS RESERVED. REGISTERED IN GENEVA.</span>
+      <span style="color: var(--gold-primary);">CONFIDENTIALITY SECURED VIA 256-BIT QUANTUM ENCRYPTION</span>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/audio-engine.js"></script>
+  <script src="js/luxury-cursor.js"></script>
+  <script src="js/shoe-customizer.js"></script>
+  <script src="js/cart-concierge.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
